@@ -10,11 +10,21 @@
 #
 # print(input("What's your name?"))
 
-### Variables
+# ### Variables
+#
+# user_name = input("What's your name?\n")
+# username_length = len(user_name)
+#
+# ### Len
+#
+# print(f"Your name is {user_name}, which is {username_length} characters in length.")
 
-name = input("What's your name?\n")
-length = len(name)
+### Project: Band Name Generator
 
-### Len
+print("Welcome to the Band Name Generator.")
 
-print(f"Your name is {name}, which is {length} characters in length.")
+user_city = input("What's the name of the city you grew up in?\n")
+
+user_pet_name = input("What's your pet's name?\n")
+
+print(f"Your band name could be {user_city} {user_pet_name}")
