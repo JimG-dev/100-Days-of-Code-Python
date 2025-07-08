@@ -39,10 +39,10 @@ print("Welcome to the Tip Calculator!")
 
 bill = float(input("What was the total bill amount?\n$"))
 tip = float(input("How much tip would you like to give? 10, 12 or 15 percent?\n")) / 100
-split = int(input("How many people to split the bill?\n"))
+split_between = int(input("How many people to split the bill?\n"))
 
 total_and_tip = bill + (bill * tip)
 
-print(f"Each person should pay: ${round(total_and_tip / split, 2)}")
+print(f"Each person should pay: ${round(total_and_tip / split_between, 2)}")
 
 
