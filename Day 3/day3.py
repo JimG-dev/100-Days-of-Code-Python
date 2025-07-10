@@ -23,19 +23,32 @@
 print("Welcome to the Rollercoaster!")
 
 height = int(input("What's your height? \n"))
+total = 0
 
 if height >= 120:
 
     age = int(input("How old are you?\n"))
 
     if age > 18:
-        print("You pay $12")
+        print("Adult tickets are $12.")
+        total = 12
 
     elif age >= 12:
-        print("You pay $7")
+        print("Youth tickets are $7.")
+        total = 7
 
     else:
-        print("You pay $5")
+        print("Child tickets are $5.")
+        total  = 5
+
+    photo = input("Do you want to have a photo taken? Type y for Yes or n for No.\n")
+
+    if photo == "y":
+        total += 3
+
+    print(f"Your total comes to ${total}.")
+
+
 
 
 else:
