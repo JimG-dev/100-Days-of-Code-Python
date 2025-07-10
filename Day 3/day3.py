@@ -1,10 +1,19 @@
-### If/else
+# ### If/else
+#
+# print("Welcome to the Rollercoaster!")
+#
+# height = int(input("What's your height? \n"))
+#
+# if height >= 120:
+#     print("You can ride!!")
+# else:
+#     print("No ride for you!!")
 
-print("Welcome to the Rollercoaster!")
+### Modulos
 
-height = int(input("What's your height? \n"))
+number = int(input("Insert a number: \n"))
 
-if height >= 120:
-    print("You can ride!!")
+if number % 2 == 0:
+    print("This is an even number")
 else:
-    print("No ride for you!!")
+    print("Not an even number, pal!")
