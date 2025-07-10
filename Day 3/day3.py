@@ -11,9 +11,29 @@
 
 ### Modulos
 
-number = int(input("Insert a number: \n"))
+# number = int(input("Insert a number: \n"))
+#
+# if number % 2 == 0:
+#     print("This is an even number")
+# else:
+#     print("Not an even number, pal!")
+#
+#
 
-if number % 2 == 0:
-    print("This is an even number")
+print("Welcome to the Rollercoaster!")
+
+height = int(input("What's your height? \n"))
+
+if height >= 120:
+
+    age = int(input("How old are you?\n"))
+
+    if age >= 18:
+        print("You can ride!!")
+
+    else:
+        print("You're not old enough, friendo.")
+
+
 else:
-    print("Not an even number, pal!")
+    print("You're not tall enough, friendo.")
