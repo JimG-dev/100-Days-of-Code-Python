@@ -20,36 +20,74 @@
 #
 #
 
-print("Welcome to the Rollercoaster!")
+# print("Welcome to the Rollercoaster!")
+#
+# height = int(input("What's your height? \n"))
+# total = 0
+#
+# if height >= 120:
+#
+#     age = int(input("How old are you?\n"))
+#
+#     if age > 18:
+#         print("Adult tickets are $12.")
+#         total = 12
+#
+#     elif age >= 12:
+#         print("Youth tickets are $7.")
+#         total = 7
+#
+#     else:
+#         print("Child tickets are $5.")
+#         total  = 5
+#
+#     photo = input("Do you want to have a photo taken? Type y for Yes or n for No.\n")
+#
+#     if photo == "y":
+#         total += 3
+#
+#     print(f"Your total comes to ${total}.")
+#
+# else:
+#     print("You're not tall enough, friendo.")
 
-height = int(input("What's your height? \n"))
+
+print("Welcome to Python Pizza's!")
+
+size = input("What size pizza would you like? S, M or L:\n")
+pepperoni = input("Would you like pepperoni on your pizza? Y or N:\n")
+cheese = input("Would you like extra cheese on your pizza? Y or N:\n")
 total = 0
 
-if height >= 120:
+if size == "S":
 
-    age = int(input("How old are you?\n"))
+    total += 15
 
-    if age > 18:
-        print("Adult tickets are $12.")
-        total = 12
+    if pepperoni == "Y":
+        total += 2
 
-    elif age >= 12:
-        print("Youth tickets are $7.")
-        total = 7
+    if cheese == "Y":
+        total += 1
 
-    else:
-        print("Child tickets are $5.")
-        total  = 5
-
-    photo = input("Do you want to have a photo taken? Type y for Yes or n for No.\n")
-
-    if photo == "y":
+elif size == "M":
+    total += 20
+    if pepperoni == "Y":
         total += 3
 
-    print(f"Your total comes to ${total}.")
+    if cheese == "Y":
+        total += 1
 
+elif size == "L":
+    total += 25
+    if pepperoni == "Y":
+        total += 3
 
-
+    if cheese == "Y":
+        total += 1
 
 else:
-    print("You're not tall enough, friendo.")
+    print("Wrong input.")
+
+print(f"Your total is ${total}")
+
+
