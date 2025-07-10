@@ -28,11 +28,14 @@ if height >= 120:
 
     age = int(input("How old are you?\n"))
 
-    if age >= 18:
-        print("You can ride!!")
+    if age > 18:
+        print("You pay $12")
+
+    elif age >= 12:
+        print("You pay $7")
 
     else:
-        print("You're not old enough, friendo.")
+        print("You pay $5")
 
 
 else:
